@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1514a591.css",
+    "main.js": "/static/js/main.b1953023.js",
+    "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
+    "static/media/LewisThackerayCV.pdf": "/static/media/LewisThackerayCV.bf6057d13a43bf3b646f.pdf",
+    "static/media/me.jpeg": "/static/media/me.4a90e2b1e364865c755b.jpeg",
+    "index.html": "/index.html",
+    "main.1514a591.css.map": "/static/css/main.1514a591.css.map",
+    "main.b1953023.js.map": "/static/js/main.b1953023.js.map",
+    "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1514a591.css",
+    "static/js/main.b1953023.js"
+  ]
+}
