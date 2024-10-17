@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
-}
+:root {--PoppinsFont: 'Poppins', sans-serif; --NunitoFont: 'Nunito', sans-serif; --ArmataFont: "Armata", sans-serif;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {margin: 0; padding: 0; box-sizing: border-box;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.title {height: 100px;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.header {position: relative; width: 100%; display: flex; justify-content: center; align-items: flex-start;}
 
-.App-link {
-  color: #61dafb;
-}
+.email {font-family: var(--NunitoFont); position: fixed; top: 0; right: 0; margin-top: 2rem; margin-right: 4rem; color: black; background-color: #bfc9ff; font-size: 22px; border: 0; border-radius: 10px; padding: 5px 10px;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.name {font-family: var(--ArmataFont); font-weight: 500; font-size: 36px; text-align: center; margin-top: 2.5rem;}
+
+.image {height: 450px; width: 450px; border-radius: 300px; margin-top: 65px; margin-bottom: 0px; margin-left: 30px;}
+
+.about-me-container-words {margin-top: -475px; margin-left: 35rem;}
+
+.introduction {max-width: 95%; text-align: justify; font-family: var(--PoppinsFont);}
+
+.text {max-width: 95%; text-align: justify; font-family: var(--NunitoFont); font-size: 18px;}
+
+.buttons-container{margin-top: 50px; justify-content: space-between; z-index: 1;}
+
+.linkedin-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; background-color: #0c64c5; border: 0; border-radius: 10px; z-index: 100000;}
+
+.github-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; background-color: black; color: white; border: 0; border-radius: 10px;}
+
+.cv-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; font-family: var(--PoppinsFont); background-color: #f89c5b; border: 0; border-radius: 10px;}
+
+.cv-text {font-family: var(--PoppinsFont); font-weight: bold; color: white;}
+
+.cv-container {justify-content: center;}
+
+.extra-information-container {width: 400px; margin-left: -500px; margin-top: -25px;}
+
+.extra-information-container-text {font-family: var(--ArmataFont); text-align: center;}
