@@ -1,35 +1,144 @@
-:root {--PoppinsFont: 'Poppins', sans-serif; --NunitoFont: 'Nunito', sans-serif; --ArmataFont: "Armata", sans-serif;}
-
-* {margin: 0; padding: 0; box-sizing: border-box;}
-
-.title {height: 100px;}
-
-.header {position: relative; width: 100%; display: flex; justify-content: center; align-items: flex-start;}
-
-.email {font-family: var(--NunitoFont); position: fixed; top: 0; right: 0; margin-top: 2rem; margin-right: 4rem; color: black; background-color: #bfc9ff; font-size: 22px; border: 0; border-radius: 10px; padding: 5px 10px;}
-
-.name {font-family: var(--ArmataFont); font-weight: 500; font-size: 36px; text-align: center; margin-top: 2.5rem;}
-
-.image {height: 450px; width: 450px; border-radius: 300px; margin-top: 65px; margin-bottom: 0px; margin-left: 30px;}
-
-.about-me-container-words {margin-top: -475px; margin-left: 35rem;}
-
-.introduction {max-width: 95%; text-align: justify; font-family: var(--PoppinsFont);}
-
-.text {max-width: 95%; text-align: justify; font-family: var(--NunitoFont); font-size: 18px;}
-
-.buttons-container{margin-top: 50px; justify-content: space-between; z-index: 1;}
-
-.linkedin-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; background-color: #0c64c5; border: 0; border-radius: 10px; z-index: 100000;}
-
-.github-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; background-color: black; color: white; border: 0; border-radius: 10px;}
-
-.cv-button {height: 50px; width: 200px; margin-left: 50px; font-size: 40px; font-family: var(--PoppinsFont); background-color: #f89c5b; border: 0; border-radius: 10px;}
-
-.cv-text {font-family: var(--PoppinsFont); font-weight: bold; color: white;}
-
-.cv-container {justify-content: center;}
-
-.extra-information-container {width: 400px; margin-left: -500px; margin-top: -25px;}
-
-.extra-information-container-text {font-family: var(--ArmataFont); text-align: center;}
+:root {
+    --PoppinsFont: 'Poppins', sans-serif;
+    --NunitoFont: 'Nunito', sans-serif;
+    --ArmataFont: 'Armata', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--PoppinsFont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2vh 5vw;
+    text-align: center;
+  }
+  
+  .header {
+    position: absolute; /* Fixed at the top of the screen */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .name {
+    font-family: var(--ArmataFont);
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+  }  
+  
+  .email {
+    font-family: var(--NunitoFont);
+    position: fixed;
+    top: 2rem;
+    right: 4rem;
+    color: black;
+    background-color: #bfc9ff;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .image {
+    width: clamp(150px, 30vw, 250px); /* Adjust size dynamically */
+    height: auto;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+  
+  .about-me-container-words {
+    max-width: 700px;
+    width: 80vw;
+    margin: 2rem auto 0;
+    text-align: justify;
+  }
+  
+  .introduction {
+    font-family: var(--PoppinsFont);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .text {
+    font-family: var(--NunitoFont);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+  
+  .linkedin-button,
+  .github-button,
+  .cv-button {
+    height: 50px;
+    width: clamp(150px, 15vw, 200px); /* Responsive button width */
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .linkedin-button {
+    background-color: #0c64c5;
+  }
+  
+  .github-button {
+    background-color: black;
+  }
+  
+  .cv-button {
+    background-color: #f89c5b;
+    font-family: var(--PoppinsFont);
+  }
+  
+  .cv-text {
+    font-family: var(--PoppinsFont);
+    font-weight: bold;
+    color: white;
+  }
+  
+  .extra-information-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  .extra-information-container-text {
+    font-family: var(--ArmataFont);
+  }
+  
+  /* Larger screen adjustments */
+  @media (min-width: 1024px) {
+    .header {
+      justify-content: flex-end;
+    }
+  
+    .about-me-container-words {
+      text-align: left;
+    }
+  
+    .buttons-container {
+      justify-content: center;
+    }
+  }

@@ -36,7 +36,7 @@ function AboutMe() {
             <br></br>
             <li>Passionate entrepreneur, currently building Vorium which aims to innovate the way businesses interact with their customers.</li>
             <br></br>
-            <li>Seeking an industrial placement to build strong foundations for a career in IT and software engineering.</li>
+            <li>Seeking industrial placements and summer internships to build strong foundations for a career in IT and software engineering.</li>
           </ul>
         </p>
         <div className='buttons-container'>
