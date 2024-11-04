@@ -11,7 +11,7 @@ function Header() {
   const handleEmailClick = () => {window.location.href = 'mailto:thackeray.lewis0@gmail.com'}
   return (
     <header className='header'>
-      <title className='title'>Lewis Thackeray</title> <div className='name'>Lewis Thackeray</div> <button className='email' onClick={handleEmailClick}>Email Me!</button> <hr></hr>
+      <title className='title'>Lewis Thackeray</title> <button className='email' onClick={handleEmailClick}>Email Me!</button> <hr></hr>
     </header>
   )
 }
